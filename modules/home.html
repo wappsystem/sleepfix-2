@@ -1,0 +1,61 @@
+<div id=D__ID>
+   <div id=page__ID>
+      <div class="container-fluid max__ID">
+         <div class="text-center panel__ID">
+            <br>
+            <h1>SleepFix Study</h1>
+            <hr style='border-top:1px solid #f05f40;'></hr>
+            <p>
+               Aliquam non vestibulum mi, sed volutpat ipsum. Nunc ultricies quam id mi
+               semper, vitae mattis mi iaculis. Nullam tincidunt vehicula turpis at porttitor.
+               Sed bibendum odio non maximus suscipit. Pellentesque consectetur orci id rutrum lacinia.
+               Lumino theme is a Bootstrap 4.0 mobile compatible layout for your website.
+               Cras dolor neque, mollis et tortor eget, ornare hendrerit lectus. Donec
+               condimentum leo ut elementum consequat. Sed condimentum sagittis neque in
+               iaculis. Duis quis libero nec mauris porta luctus et sit amet turpis.
+               Proin auctor tortor quis ipsum dignissim, quis congue tortor.
+               Aliquam non vestibulum mi, sed volutpat ipsum. Nunc ultricies quam id mi
+               semper, vitae mattis mi iaculis. Nullam tincidunt vehicula turpis at porttitor.
+               Sed bibendum odio non maximus suscipit. Pellentesque consectetur orci id rutrum lacinia.
+            </p>
+            <br>
+            <a id="btn__ID" class="btn btn-primary btn-lg">I would like to take part in the survey</a>
+            <br><br>
+         </div>
+      </div>
+   </div>
+   <script>
+      function F__ID(){
+         //-------------------------------------
+         if($vm.server=="development") $('#vm_dev_info__ID').show();
+         //-------------------------------------
+         var this_module=$vm.module_list[$vm.vm['__ID'].name];
+         var prefix=this_module.prefix; if(prefix==undefined) prefix="";
+         $('#btn__ID').on('click',function(){
+            $vm.load_module_v2(prefix+'screening-form','',{});
+         })
+         //-------------------------------------
+         $('#D__ID').css('height',$vm.min_height);
+      }
+   </script>
+   <style>
+      #D__ID{
+         height:100%;
+         animation: vm_module_fadein 1.0s;
+      }
+      #page__ID{
+         height:100%;
+         display: flex;
+         align-items: center;
+      }
+      .max__ID{
+         max-width:800px;
+      }
+      .panel__ID{
+         color:#fff;
+         background: rgba(0, 0, 0, 0.7);
+         border-radius: 25px;
+         padding:10px;
+      }
+   </style>
+</div>
