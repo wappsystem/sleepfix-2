@@ -12,7 +12,7 @@
 
               <!-- form start -->
 
-              <form id="Screening">
+              <form id="F__ID">
                 <h3>Screening - Form Heading</h3>
 
                 <!-- participant name and study id -->
@@ -254,7 +254,7 @@
 
                 <!-- submit button -->
 
-                <button type="submit" id="screeningSubmit" class="btn btn-primary btn-lg">Submit</button>
+                <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
               </form>
               <p class="note">*If unsure, please contact the research team. <strong>Phone:</strong> (02) 812345678</p>
             </div>
@@ -295,22 +295,17 @@
         	letter-spacing: 0;
         	line-height: 28px;
         }
-        label {
+        /*modified by Zhiming: add #D__ID to avoid conflic */
+        #D__ID label {
         	font-family: Nunito-Bold;
         	font-size: 14px;
         	color: #444645;
         	line-height: 21px;
         }
-        input[type="radio"] {
+
+        /*modified by Zhiming: add #D__ID to avoid conflic */
+        #D__ID input[type="radio"] {
         	margin-right: 5px !important
-        }
-        body {
-        	background-color: #004955 !important;
-        	background-image: url(images/form-bg.jpg);
-        	background-size: cover;
-        	background-repeat: repeat-x;
-        	background-position: center top;
-        	background-attachment: fixed;
         }
         .formbox {
         	background-color: white;
@@ -325,7 +320,10 @@
         	background-color: #FCFBF5
         }
         /* SUBMIT BUTTON */
-        .btn-primary, .btn-primary:active, .btn-primary:visited, .btn-primary:focus {
+
+        /*modified by Zhiming: add #D__ID to avoid conflic, we use default .btn-primary somewhere else */
+
+        #D__ID .btn-primary, #D__ID .btn-primary:active, #D__ID .btn-primary:visited, #D__ID .btn-primary:focus {
         	background-color: #45496A;
         	border-color: #45496A;
         	font-family: Nunito-Light;
@@ -339,7 +337,7 @@
         	padding: 16px 35px;
         	margin: 15px;
         }
-        .btn-primary:hover {
+        #D__ID .btn-primary:hover {
         	background-color: #35395D;
         	border-color: #35395D;
         	font-family: Nunito-Light;
@@ -374,20 +372,6 @@
         	font-size: 14px;
         	color: #939597;
         	margin-left: 15px;
-        }
-        /* FOOTER */
-        footer {
-        	background-color: #23807F !important;
-        	height: 150px !important;
-        	padding-top: 30px;
-        }
-        footer .col-sm-12 {
-        	margin-top: 5px;
-        }
-        footer img {
-        	width: 167px;
-        	height: 49px;
-        	margin: 5px 10px;
         }
         /* RADIO BUTTONS */
         .radiobuttons {
